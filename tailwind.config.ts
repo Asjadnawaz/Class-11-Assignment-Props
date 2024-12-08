@@ -13,6 +13,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        ComeFromLeft: {
+          "from":{ transform : "translateX(-100%)" },
+          "to" :{ transform : "translateX(0)" }
+        }
+      },
+      animation: {
+        comeFromLeft : "ComeFromLeft 1s ease-in-out"
+      }
     },
   },
   plugins: [],
